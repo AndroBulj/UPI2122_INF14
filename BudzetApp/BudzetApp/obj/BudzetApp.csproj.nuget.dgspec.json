@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andro\\Desktop\\UPI\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {}
+    "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andro\\Desktop\\UPI\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {
+    "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andro\\Desktop\\UPI\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
+        "projectUniqueName": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
         "projectName": "BudzetApp",
-        "projectPath": "C:\\Users\\Andro\\Desktop\\UPI\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
+        "projectPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
         "packagesPath": "C:\\Users\\Andro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andro\\Desktop\\UPI\\BudzetApp\\BudzetApp\\obj\\",
+        "outputPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andro\\AppData\\Roaming\\NuGet\\NuGet.Config",
