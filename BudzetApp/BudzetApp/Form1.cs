@@ -14,30 +14,49 @@ namespace BudzetApp
 
     public partial class Form1 : Form
     {
+
+        public formAnaliza frmAnaliza = new formAnaliza();
+
         public class Transakcija
         {
             private string vrsta;
             private string opis;
             private double iznos = 0;
             private string valuta;
+            private string kategorija;
 
             public string Vrsta { get => vrsta; set => vrsta = value; }
             public string Opis { get => opis; set => opis = value; }
             public double Iznos { get => iznos; set => iznos = value; }
             public string Valuta { get => valuta; set => valuta = value; }
+            public string Kategorija { get => kategorija; set => kategorija = value; }
 
-            public Transakcija(string _vrsta, string _opis, double _iznos, string _valuta)
+            public Transakcija(string _vrsta, string _opis, double _iznos, string _valuta, string _kategorija)
             {
                 this.Vrsta = _vrsta;
                 this.Opis = _opis;
                 this.Iznos = _iznos;
                 this.Valuta = _valuta;
+                this.Kategorija = _kategorija;
             }
         }
 
+        Dictionary<string, double> kategorijePrihoda = new Dictionary<string, double>() {
+            { "posao", 0 },
+            { "poklon", 0 },
+            { "instrukcije", 0 }
+        };
+        Dictionary<string, double> kategorijeRashoda = new Dictionary<string, double>() {
+            { "hrana", 0 },
+            { "prijevoz", 0 },
+            { "tehnologija", 0 },
+            { "zabava", 0 },
+            { "higijena", 0 }
+        };
+
         private double total;
 
-        Dictionary<int, Transakcija> transakcije = new Dictionary<int, Transakcija>();
+        List<Transakcija> transakcije = new List<Transakcija>();
 
         public double Total { get => total; set => total = value; }
 
@@ -53,6 +72,7 @@ namespace BudzetApp
             string opis;
             double iznos;
             string valuta;
+            string kategorija;
 
             if (rbtnPrihod.Checked)
             {
@@ -90,17 +110,30 @@ namespace BudzetApp
                 return;
             }
 
-            Transakcija nova = new Transakcija(vrsta, opis, iznos, valuta);
+            if (cmbKategorija.SelectedIndex == -1)
+            {
+                MessageBox.Show("Odaberite kategoriju");
+                return;
+            }
+            else
+            {
+                kategorija = cmbKategorija.Text;
+            }
+            
 
-            transakcije.Add(transakcije.Count, nova);
+            Transakcija nova = new Transakcija(vrsta, opis, iznos, valuta, kategorija);
+
+            transakcije.Add(nova);
 
             if (nova.Vrsta == "Prihod")
             {
                 Total += nova.Iznos;
+                kategorijePrihoda[nova.Kategorija] += nova.Iznos;
             }
             else
             {
                 Total -= nova.Iznos;
+                kategorijeRashoda[nova.Kategorija] += nova.Iznos;
             }
 
             rtbIspis.AppendText(nova.Vrsta + "\t " + nova.Opis + "\t " + nova.Iznos + "\t "+ nova.Valuta+"\n");
@@ -115,6 +148,30 @@ namespace BudzetApp
         private void btnOdustani_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbtnPrihod_CheckedChanged(object sender, EventArgs e)
+        {
+            cmbKategorija.Items.Clear();
+            if (rbtnPrihod.Checked)
+            {
+                cmbKategorija.Items.AddRange(kategorijePrihoda.Keys.ToArray());
+            }
+            else
+            {
+                cmbKategorija.Items.AddRange(kategorijeRashoda.Keys.ToArray());
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnaliza_Click(object sender, EventArgs e)
+        {
+            frmAnaliza.ShowDialog();
         }
     }
 }

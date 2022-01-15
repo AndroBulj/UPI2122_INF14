@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Andro\\.nuget\\packages\\": {}
+    "C:\\Users\\Karlo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
+      "projectUniqueName": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
       "projectName": "BudzetApp",
-      "projectPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
-      "packagesPath": "C:\\Users\\Andro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\obj\\",
+      "projectPath": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\BudzetApp\\BudzetApp.csproj",
+      "packagesPath": "C:\\Users\\Karlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\BudzetApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Karlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
