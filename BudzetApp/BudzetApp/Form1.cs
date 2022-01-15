@@ -10,29 +10,31 @@ using System.Windows.Forms;
 
 namespace BudzetApp
 {
-    public class Transakcija
-    {
-        private string vrsta;
-        private string opis;
-        private double iznos = 0;
-        private string valuta;
-
-        public string Vrsta { get => vrsta; set => vrsta = value; }
-        public string Opis { get => opis; set => opis = value; }
-        public double Iznos { get => iznos; set => iznos = value; }
-        public string Valuta { get => valuta; set => valuta = value; }
-
-        public Transakcija(string _vrsta, string _opis, double _iznos, string _valuta)
-        {
-            this.Vrsta = _vrsta;
-            this.Opis = _opis;
-            this.Iznos = _iznos;
-            this.Valuta = _valuta;
-        }
-    }
+    
 
     public partial class Form1 : Form
     {
+        public class Transakcija
+        {
+            private string vrsta;
+            private string opis;
+            private double iznos = 0;
+            private string valuta;
+
+            public string Vrsta { get => vrsta; set => vrsta = value; }
+            public string Opis { get => opis; set => opis = value; }
+            public double Iznos { get => iznos; set => iznos = value; }
+            public string Valuta { get => valuta; set => valuta = value; }
+
+            public Transakcija(string _vrsta, string _opis, double _iznos, string _valuta)
+            {
+                this.Vrsta = _vrsta;
+                this.Opis = _opis;
+                this.Iznos = _iznos;
+                this.Valuta = _valuta;
+            }
+        }
+
         private double total;
 
         Dictionary<int, Transakcija> transakcije = new Dictionary<int, Transakcija>();
