@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace BudzetApp
 {
-    
+   
 
     public partial class Form1 : Form
     {
-
-        public formAnaliza frmAnaliza = new formAnaliza();
+        
+        //public formAnaliza frmAnaliza = new formAnaliza();
 
         public class Transakcija
         {
@@ -41,18 +41,24 @@ namespace BudzetApp
             }
         }
 
-        Dictionary<string, double> kategorijePrihoda = new Dictionary<string, double>() {
+        public static Dictionary<string, double> kategorijePrihoda = new Dictionary<string, double>() {
             { "posao", 0 },
             { "poklon", 0 },
             { "instrukcije", 0 }
         };
-        Dictionary<string, double> kategorijeRashoda = new Dictionary<string, double>() {
+
+        public static double totalPrihoda = 0;
+
+        public static Dictionary<string, double> kategorijeRashoda = new Dictionary<string, double>() {
             { "hrana", 0 },
             { "prijevoz", 0 },
             { "tehnologija", 0 },
             { "zabava", 0 },
             { "higijena", 0 }
         };
+
+        public static double totalRashoda = 0;
+
 
         private double total;
 
@@ -128,11 +134,13 @@ namespace BudzetApp
             if (nova.Vrsta == "Prihod")
             {
                 Total += nova.Iznos;
+                totalPrihoda += nova.Iznos;
                 kategorijePrihoda[nova.Kategorija] += nova.Iznos;
             }
             else
             {
                 Total -= nova.Iznos;
+                totalRashoda += nova.Iznos;
                 kategorijeRashoda[nova.Kategorija] += nova.Iznos;
             }
 
@@ -171,7 +179,9 @@ namespace BudzetApp
 
         private void btnAnaliza_Click(object sender, EventArgs e)
         {
-            frmAnaliza.ShowDialog();
+            //frmAnaliza.ShowDialog();
+            formAnaliza frm = new formAnaliza();
+            frm.ShowDialog();
         }
     }
 }

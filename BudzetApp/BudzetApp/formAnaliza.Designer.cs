@@ -75,6 +75,7 @@ namespace BudzetApp
             this.Controls.Add(this.rtbAnaliza);
             this.Name = "formAnaliza";
             this.Text = "formAnaliza";
+            this.Load += new System.EventHandler(this.formAnaliza_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
