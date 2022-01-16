@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BudzetApp",
+    "\\BudzetApp\\BudzetApp"
   ],
-  "SelectedNode": "\\C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14",
+  "SelectedNode": "\\BudzetApp\\BudzetApp.sln",
   "PreviewInSolutionExplorer": false
 }

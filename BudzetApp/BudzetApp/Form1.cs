@@ -14,7 +14,7 @@ namespace BudzetApp
 
     public partial class Form1 : Form
     {
-        
+
         //public formAnaliza frmAnaliza = new formAnaliza();
 
         public class Transakcija
@@ -59,6 +59,24 @@ namespace BudzetApp
 
         public static double totalRashoda = 0;
 
+        public static Dictionary<string, double> konverzije = new Dictionary<string, double>() {
+            {"HRKEUR", 0.13295006},
+            {"HRKUSD", 0.15178081},
+            {"HRKGBP", 0.11096883},
+            {"EURHRK", 7.5216216},
+            {"EURUSD", 1.1416378},
+            {"EURGBP", 0.83466552},
+            {"USDHRK", 6.5884483},
+            {"USDEUR", 0.87593457},
+            {"USDGBP", 0.73111238},
+            {"GBPHRK", 9.0115398},
+            {"GBPEUR", 1.1980847},
+            {"GBPUSD", 1.3677788},
+            {"HRKHRK", 1},
+            {"EUREUR", 1},
+            {"GBPGBP", 1},
+            {"USDUSD", 1}
+        };
 
         private double total;
 
@@ -124,6 +142,13 @@ namespace BudzetApp
             else
             {
                 kategorija = cmbKategorija.Text;
+            }
+
+            if (valuta != "HRK")
+            {
+                double koeficijentKonverzije = konverzije[valuta + "HRK"];
+                iznos = Math.Round(iznos*koeficijentKonverzije, 2);
+                valuta = "HRK";
             }
             
 

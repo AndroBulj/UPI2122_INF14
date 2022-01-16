@@ -48,13 +48,13 @@ namespace BudzetApp
             this.cmbValutaAnaliza.Items.AddRange(new object[] {
             "HRK",
             "EUR",
-            "BAM",
             "USD",
             "GBP"});
             this.cmbValutaAnaliza.Location = new System.Drawing.Point(372, 44);
             this.cmbValutaAnaliza.Name = "cmbValutaAnaliza";
             this.cmbValutaAnaliza.Size = new System.Drawing.Size(121, 23);
             this.cmbValutaAnaliza.TabIndex = 1;
+            this.cmbValutaAnaliza.SelectedIndexChanged += new System.EventHandler(this.cmbValutaAnaliza_SelectedIndexChanged);
             // 
             // label1
             // 

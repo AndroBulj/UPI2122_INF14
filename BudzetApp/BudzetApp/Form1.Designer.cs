@@ -115,7 +115,6 @@ namespace BudzetApp
             this.cmbValuta.Items.AddRange(new object[] {
             "HRK",
             "EUR",
-            "BAM",
             "USD",
             "GBP"});
             this.cmbValuta.Location = new System.Drawing.Point(103, 192);
