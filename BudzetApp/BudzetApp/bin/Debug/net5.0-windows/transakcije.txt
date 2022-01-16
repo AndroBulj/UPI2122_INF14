@@ -1,0 +1,2 @@
+Prihod;poso;100;HRK;posao
+Rashod;zett;12;HRK;prijevoz

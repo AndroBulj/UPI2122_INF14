@@ -1,0 +1,3 @@
+posao;100
+poklon;0
+instrukcije;0

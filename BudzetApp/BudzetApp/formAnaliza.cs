@@ -48,8 +48,6 @@ namespace BudzetApp
         private void formAnaliza_Load(object sender, EventArgs e)
         {
             
-            double totalPrihoda = Form1.totalPrihoda;
-            double totalRashoda = Form1.totalRashoda;
             koeficijentKonverzije = 1;
             valutaAnaliza = "HRK";
             IspisAnalize();

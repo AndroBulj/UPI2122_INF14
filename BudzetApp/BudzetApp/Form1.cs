@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,21 +42,11 @@ namespace BudzetApp
             }
         }
 
-        public static Dictionary<string, double> kategorijePrihoda = new Dictionary<string, double>() {
-            { "posao", 0 },
-            { "poklon", 0 },
-            { "instrukcije", 0 }
-        };
+        public static Dictionary<string, double> kategorijePrihoda = new Dictionary<string, double>();
 
         public static double totalPrihoda = 0;
 
-        public static Dictionary<string, double> kategorijeRashoda = new Dictionary<string, double>() {
-            { "hrana", 0 },
-            { "prijevoz", 0 },
-            { "tehnologija", 0 },
-            { "zabava", 0 },
-            { "higijena", 0 }
-        };
+        public static Dictionary<string, double> kategorijeRashoda = new Dictionary<string, double>();
 
         public static double totalRashoda = 0;
 
@@ -156,6 +147,11 @@ namespace BudzetApp
 
             transakcije.Add(nova);
 
+            using (StreamWriter sw = new StreamWriter("transakcije.txt", true))
+            {
+                sw.WriteLine(vrsta + ";" + opis + ";" + iznos + ";" + valuta + ";" + kategorija);
+            }
+
             if (nova.Vrsta == "Prihod")
             {
                 Total += nova.Iznos;
@@ -207,6 +203,115 @@ namespace BudzetApp
             //frmAnaliza.ShowDialog();
             formAnaliza frm = new formAnaliza();
             frm.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string kategorijePrihodaFile = "kategorijePrihoda.txt";
+            string kategorijeRashodaFile = "kategorijeRashoda.txt";
+            string transakcijeFile = "transakcije.txt";
+            string totalFile = "total.txt";
+
+            try
+            {
+                using (StreamReader reader = new StreamReader(kategorijePrihodaFile))
+                {
+                    string linija;
+                    while ((linija = reader.ReadLine()) != null)
+                    {
+                        string[] vrijednosti = linija.Split(";");
+                        string nazivKategPrihoda = vrijednosti[0];
+                        double iznosKategPrihoda = double.Parse(vrijednosti[1]);
+                        kategorijePrihoda.Add(nazivKategPrihoda, iznosKategPrihoda);
+                        totalPrihoda += iznosKategPrihoda;
+
+                    }
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+
+            try
+            {
+                using (StreamReader reader = new StreamReader(kategorijeRashodaFile))
+                {
+                    string linija;
+                    while ((linija = reader.ReadLine()) != null)
+                    {
+                        string[] vrijednosti = linija.Split(";");
+                        string nazivKategRashoda = vrijednosti[0];
+                        double iznosKategRashoda = double.Parse(vrijednosti[1]);
+                        kategorijeRashoda.Add(nazivKategRashoda, iznosKategRashoda);
+                        totalRashoda += iznosKategRashoda;
+
+                    }
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+
+            try
+            {
+                using (StreamReader reader = new StreamReader(transakcijeFile))
+                {
+                    string linija;
+                    while ((linija = reader.ReadLine()) != null)
+                    {
+                        string[] vrijednosti = linija.Split(";");
+                        Transakcija novaTrans = new Transakcija(vrijednosti[0], vrijednosti[1], double.Parse(vrijednosti[2]), vrijednosti[3], vrijednosti[4]);
+                        transakcije.Add(novaTrans);
+
+                        rtbIspis.AppendText(novaTrans.Vrsta + "\t " + novaTrans.Opis + "\t " + novaTrans.Iznos + "\t " + novaTrans.Valuta + "\n");
+
+                    }
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+
+            try
+            {
+                using (StreamReader reader = new StreamReader(totalFile))
+                {
+                    Total = double.Parse(reader.ReadToEnd());
+                    lblUkupno.Text = Total + " HRK";
+                }
+            }
+            catch (Exception exp)
+            {
+                MessageBox.Show(exp.Message);
+            }
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            using (StreamWriter sr = new StreamWriter("kategorijePrihoda.txt", false))
+            {
+                foreach (KeyValuePair<string, double> kategorija in Form1.kategorijePrihoda)
+                {
+                    sr.WriteLine(kategorija.Key + ";" + kategorija.Value);
+                }
+            }
+
+            using (StreamWriter sr = new StreamWriter("kategorijeRashoda.txt", false))
+            {
+                foreach (KeyValuePair<string, double> kategorija in Form1.kategorijeRashoda)
+                {
+                    sr.WriteLine(kategorija.Key + ";" + kategorija.Value);
+                }
+            }
+
+            using (StreamWriter sr = new StreamWriter("total.txt", false))
+            {
+                sr.WriteLine(Total);
+            }
         }
     }
 }
