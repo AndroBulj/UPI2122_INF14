@@ -1,4 +1,4 @@
 prijevoz;12
-zabava;260
-higijena;0
+zabava;1012.16
+ljubimac;0
 kino;0

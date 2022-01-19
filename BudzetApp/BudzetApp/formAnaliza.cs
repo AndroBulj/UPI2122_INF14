@@ -135,8 +135,6 @@ namespace BudzetApp
             cmbKategorije.Text = "";
             txtDodajKat.Text = "";
             IspisAnalize();
-
-
         }
 
         public void btnDodajKat_Click(object sender, EventArgs e)

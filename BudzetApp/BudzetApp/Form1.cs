@@ -89,6 +89,21 @@ namespace BudzetApp
             InitializeComponent();
         }
 
+        public void RacunajTotal(Transakcija nova)
+        {
+            if (nova.Vrsta == "Prihod")
+            {
+                Total += nova.Iznos;
+                totalPrihoda += nova.Iznos;
+                kategorijePrihoda[nova.Kategorija] += nova.Iznos;
+            }
+            else
+            {
+                Total -= nova.Iznos;
+                totalRashoda += nova.Iznos;
+                kategorijeRashoda[nova.Kategorija] += nova.Iznos;
+            }
+        }
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
@@ -160,19 +175,9 @@ namespace BudzetApp
             {
                 sw.WriteLine(vrsta + ";" + opis + ";" + iznos + ";" + valuta + ";" + kategorija);
             }
-
-            if (nova.Vrsta == "Prihod")
-            {
-                Total += nova.Iznos;
-                totalPrihoda += nova.Iznos;
-                kategorijePrihoda[nova.Kategorija] += nova.Iznos;
-            }
-            else
-            {
-                Total -= nova.Iznos;
-                totalRashoda += nova.Iznos;
-                kategorijeRashoda[nova.Kategorija] += nova.Iznos;
-            }
+            
+            RacunajTotal(nova);
+            
 
             rtbIspis.AppendText(nova.Vrsta + "\t " + nova.Opis + "\t " + nova.Iznos + "\t "+ nova.Valuta+"\n");
             lblUkupno.Text = Total + " HRK";

@@ -10,3 +10,7 @@ Prihod;asdasdasdasf;366;HRK;novo
 Prihod;plaća;8000;HRK;posao
 Rashod;kino;200;HRK;zabava
 Prihod;asd;67;HRK;novo
+Prihod;asd;500;HRK;Test
+Prihod;nesto;300;HRK;posao
+Rashod;kino;752.16;HRK;zabava
+Prihod;rađa;752.16;HRK;posao
