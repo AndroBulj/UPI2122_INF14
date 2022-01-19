@@ -1,5 +1,3 @@
-hrana;0
 prijevoz;12
-tehnologija;0
-zabava;0
+zabava;260
 higijena;0

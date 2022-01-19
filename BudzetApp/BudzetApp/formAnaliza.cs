@@ -25,20 +25,20 @@ namespace BudzetApp
 
             rtbAnaliza.Clear();
             
-            rtbAnaliza.AppendText("Prihodi: \n");
+            rtbAnaliza.AppendText("\"Prihodi\" \n");
             foreach (KeyValuePair<string, double> kategorija in Form1.kategorijePrihoda)
             {
-                rtbAnaliza.AppendText(kategorija.Key + " :\t" 
-                    + Math.Round(kategorija.Value*koeficijentKonverzije, 2) + " " + valutaAnaliza + "\t" 
-                    + Math.Round((kategorija.Value / totalPrihoda) * 100, 2) + "%" + "\n");
+                rtbAnaliza.AppendText(kategorija.Key + ":\n" 
+                    + Math.Round(kategorija.Value*koeficijentKonverzije, 2) + " " + valutaAnaliza + "     " 
+                    + Math.Round((kategorija.Value / totalPrihoda) * 100, 2) + "%" + "\n\n");
             }
 
-            rtbAnaliza.AppendText("Rashodi: \n");
+            rtbAnaliza.AppendText("________________________________\n\n\"Rashodi\" \n");
             foreach (KeyValuePair<string, double> kategorija in Form1.kategorijeRashoda)
             {
-                rtbAnaliza.AppendText(kategorija.Key + " :\t" 
-                    + Math.Round(kategorija.Value*koeficijentKonverzije, 2) + " " + valutaAnaliza + "\t" 
-                    + Math.Round((kategorija.Value / totalRashoda) * 100, 2) + "%" + "\n");
+                rtbAnaliza.AppendText(kategorija.Key + " :\n" 
+                    + Math.Round(kategorija.Value*koeficijentKonverzije, 2) + " " + valutaAnaliza + "     " 
+                    + Math.Round((kategorija.Value / totalRashoda) * 100, 2) + "%" + "\n\n");
             }
         }
 

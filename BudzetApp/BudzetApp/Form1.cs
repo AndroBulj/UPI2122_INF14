@@ -75,6 +75,15 @@ namespace BudzetApp
 
         public double Total { get => total; set => total = value; }
 
+        private void ResetIspis()
+        {
+            rbtnPrihod.Checked = false;
+            rbtnRashod.Checked = false;
+            cmbKategorija.SelectedIndex = -1;
+            txtBoxOpis.Clear();
+            txtBoxIznos.Clear();
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -168,15 +177,12 @@ namespace BudzetApp
             rtbIspis.AppendText(nova.Vrsta + "\t " + nova.Opis + "\t " + nova.Iznos + "\t "+ nova.Valuta+"\n");
             lblUkupno.Text = Total + " HRK";
 
-            rbtnPrihod.Checked = false;
-            rbtnRashod.Checked = false;
-            txtBoxOpis.Clear();
-            txtBoxIznos.Clear();
+            ResetIspis();
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
-
+            ResetIspis();
         }
 
         private void rbtnPrihod_CheckedChanged(object sender, EventArgs e)
@@ -190,7 +196,6 @@ namespace BudzetApp
             {
                 cmbKategorija.Items.AddRange(kategorijeRashoda.Keys.ToArray());
             }
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

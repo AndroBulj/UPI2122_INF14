@@ -1,3 +1,2 @@
-posao;100
-poklon;0
-instrukcije;0
+posao;10289
+novo;366

@@ -5,7 +5,6 @@ C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\bin\Debug\net5.0-wind
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\bin\Debug\net5.0-windows\BudzetApp.dll
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\bin\Debug\net5.0-windows\ref\BudzetApp.dll
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\bin\Debug\net5.0-windows\BudzetApp.pdb
-C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.Transakcija.resources
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.csproj.GenerateResource.cache
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.AssemblyInfoInputs.cache
@@ -34,3 +33,6 @@ C:\Users\Karlo\Source\Repos\UPI2122_INF14\BudzetApp\BudzetApp\obj\Debug\net5.0-w
 C:\Users\Karlo\Source\Repos\UPI2122_INF14\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.pdb
 C:\Users\Karlo\Source\Repos\UPI2122_INF14\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.genruntimeconfig.cache
 C:\Users\Karlo\Source\Repos\UPI2122_INF14\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.formAnaliza.resources
+C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.csprojAssemblyReference.cache
+C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.Form1.resources
+C:\Users\Andro\Desktop\UPI\UPI_Projekt\BudzetApp\BudzetApp\obj\Debug\net5.0-windows\BudzetApp.formAnaliza.resources

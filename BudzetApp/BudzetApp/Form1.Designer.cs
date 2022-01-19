@@ -51,10 +51,9 @@ namespace BudzetApp
             // rbtnPrihod
             // 
             this.rbtnPrihod.AutoSize = true;
-            this.rbtnPrihod.Location = new System.Drawing.Point(61, 62);
-            this.rbtnPrihod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnPrihod.Location = new System.Drawing.Point(46, 82);
             this.rbtnPrihod.Name = "rbtnPrihod";
-            this.rbtnPrihod.Size = new System.Drawing.Size(60, 19);
+            this.rbtnPrihod.Size = new System.Drawing.Size(73, 24);
             this.rbtnPrihod.TabIndex = 0;
             this.rbtnPrihod.TabStop = true;
             this.rbtnPrihod.Text = "Prihod";
@@ -64,10 +63,9 @@ namespace BudzetApp
             // rbtnRashod
             // 
             this.rbtnRashod.AutoSize = true;
-            this.rbtnRashod.Location = new System.Drawing.Point(61, 84);
-            this.rbtnRashod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnRashod.Location = new System.Drawing.Point(46, 112);
             this.rbtnRashod.Name = "rbtnRashod";
-            this.rbtnRashod.Size = new System.Drawing.Size(64, 19);
+            this.rbtnRashod.Size = new System.Drawing.Size(79, 24);
             this.rbtnRashod.TabIndex = 1;
             this.rbtnRashod.TabStop = true;
             this.rbtnRashod.Text = "Rashod";
@@ -76,36 +74,36 @@ namespace BudzetApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 38);
+            this.label1.Location = new System.Drawing.Point(40, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.Size = new System.Drawing.Size(88, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Vrsta troška:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 159);
+            this.label2.Location = new System.Drawing.Point(66, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(46, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Iznos:";
             // 
             // lblOpis
             // 
             this.lblOpis.AutoSize = true;
-            this.lblOpis.Location = new System.Drawing.Point(61, 122);
+            this.lblOpis.Location = new System.Drawing.Point(70, 163);
             this.lblOpis.Name = "lblOpis";
-            this.lblOpis.Size = new System.Drawing.Size(34, 15);
+            this.lblOpis.Size = new System.Drawing.Size(42, 20);
             this.lblOpis.TabIndex = 4;
             this.lblOpis.Text = "Opis:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 194);
+            this.label4.Location = new System.Drawing.Point(59, 259);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Valuta:";
             // 
@@ -117,45 +115,40 @@ namespace BudzetApp
             "EUR",
             "USD",
             "GBP"});
-            this.cmbValuta.Location = new System.Drawing.Point(103, 192);
-            this.cmbValuta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbValuta.Location = new System.Drawing.Point(118, 256);
             this.cmbValuta.Name = "cmbValuta";
-            this.cmbValuta.Size = new System.Drawing.Size(133, 23);
+            this.cmbValuta.Size = new System.Drawing.Size(151, 28);
             this.cmbValuta.TabIndex = 6;
             this.cmbValuta.Text = "HRK";
             // 
             // txtBoxIznos
             // 
-            this.txtBoxIznos.Location = new System.Drawing.Point(103, 157);
-            this.txtBoxIznos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxIznos.Location = new System.Drawing.Point(118, 209);
             this.txtBoxIznos.Name = "txtBoxIznos";
-            this.txtBoxIznos.Size = new System.Drawing.Size(110, 23);
+            this.txtBoxIznos.Size = new System.Drawing.Size(151, 27);
             this.txtBoxIznos.TabIndex = 7;
             // 
             // txtBoxOpis
             // 
-            this.txtBoxOpis.Location = new System.Drawing.Point(103, 119);
-            this.txtBoxOpis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxOpis.Location = new System.Drawing.Point(118, 159);
             this.txtBoxOpis.Name = "txtBoxOpis";
-            this.txtBoxOpis.Size = new System.Drawing.Size(110, 23);
+            this.txtBoxOpis.Size = new System.Drawing.Size(151, 27);
             this.txtBoxOpis.TabIndex = 8;
             // 
             // rtbIspis
             // 
             this.rtbIspis.Enabled = false;
-            this.rtbIspis.Location = new System.Drawing.Point(293, 9);
-            this.rtbIspis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtbIspis.Location = new System.Drawing.Point(335, 12);
             this.rtbIspis.Name = "rtbIspis";
-            this.rtbIspis.Size = new System.Drawing.Size(376, 291);
+            this.rtbIspis.Size = new System.Drawing.Size(429, 387);
             this.rtbIspis.TabIndex = 9;
             this.rtbIspis.Text = "";
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(52, 239);
-            this.btnDodaj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDodaj.Location = new System.Drawing.Point(59, 319);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(82, 22);
+            this.btnDodaj.Size = new System.Drawing.Size(94, 29);
             this.btnDodaj.TabIndex = 10;
             this.btnDodaj.Text = "Dodaj";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -163,10 +156,9 @@ namespace BudzetApp
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(153, 239);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOdustani.Location = new System.Drawing.Point(175, 319);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(82, 22);
+            this.btnOdustani.Size = new System.Drawing.Size(94, 29);
             this.btnOdustani.TabIndex = 11;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -175,43 +167,45 @@ namespace BudzetApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(293, 311);
+            this.label3.Location = new System.Drawing.Point(335, 415);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(63, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Ukupno:";
             // 
             // lblUkupno
             // 
             this.lblUkupno.AutoSize = true;
-            this.lblUkupno.Location = new System.Drawing.Point(354, 311);
+            this.lblUkupno.Location = new System.Drawing.Point(405, 415);
             this.lblUkupno.Name = "lblUkupno";
-            this.lblUkupno.Size = new System.Drawing.Size(0, 15);
+            this.lblUkupno.Size = new System.Drawing.Size(0, 20);
             this.lblUkupno.TabIndex = 13;
             // 
             // cmbKategorija
             // 
             this.cmbKategorija.FormattingEnabled = true;
-            this.cmbKategorija.Location = new System.Drawing.Point(142, 62);
+            this.cmbKategorija.Location = new System.Drawing.Point(162, 79);
+            this.cmbKategorija.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbKategorija.Name = "cmbKategorija";
-            this.cmbKategorija.Size = new System.Drawing.Size(94, 23);
+            this.cmbKategorija.Size = new System.Drawing.Size(125, 28);
             this.cmbKategorija.TabIndex = 14;
             this.cmbKategorija.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(142, 38);
+            this.label5.Location = new System.Drawing.Point(162, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 15);
+            this.label5.Size = new System.Drawing.Size(125, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Kategorija troška:";
             // 
             // btnAnaliza
             // 
-            this.btnAnaliza.Location = new System.Drawing.Point(103, 277);
+            this.btnAnaliza.Location = new System.Drawing.Point(118, 376);
+            this.btnAnaliza.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAnaliza.Name = "btnAnaliza";
-            this.btnAnaliza.Size = new System.Drawing.Size(75, 23);
+            this.btnAnaliza.Size = new System.Drawing.Size(96, 41);
             this.btnAnaliza.TabIndex = 16;
             this.btnAnaliza.Text = "Analiza";
             this.btnAnaliza.UseVisualStyleBackColor = true;
@@ -219,9 +213,9 @@ namespace BudzetApp
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 340);
+            this.ClientSize = new System.Drawing.Size(834, 453);
             this.Controls.Add(this.btnAnaliza);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbKategorija);
@@ -239,7 +233,6 @@ namespace BudzetApp
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbtnRashod);
             this.Controls.Add(this.rbtnPrihod);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "BudgetApp";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

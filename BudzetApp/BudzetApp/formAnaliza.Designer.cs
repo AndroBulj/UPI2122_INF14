@@ -43,9 +43,11 @@ namespace BudzetApp
             // 
             // rtbAnaliza
             // 
-            this.rtbAnaliza.Location = new System.Drawing.Point(12, 21);
+            this.rtbAnaliza.Location = new System.Drawing.Point(14, 13);
+            this.rtbAnaliza.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtbAnaliza.Name = "rtbAnaliza";
-            this.rtbAnaliza.Size = new System.Drawing.Size(326, 244);
+            this.rtbAnaliza.ReadOnly = true;
+            this.rtbAnaliza.Size = new System.Drawing.Size(405, 375);
             this.rtbAnaliza.TabIndex = 0;
             this.rtbAnaliza.Text = "";
             // 
@@ -57,44 +59,47 @@ namespace BudzetApp
             "EUR",
             "USD",
             "GBP"});
-            this.cmbValutaAnaliza.Location = new System.Drawing.Point(372, 44);
+            this.cmbValutaAnaliza.Location = new System.Drawing.Point(281, 415);
+            this.cmbValutaAnaliza.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbValutaAnaliza.Name = "cmbValutaAnaliza";
-            this.cmbValutaAnaliza.Size = new System.Drawing.Size(121, 23);
+            this.cmbValutaAnaliza.Size = new System.Drawing.Size(138, 28);
             this.cmbValutaAnaliza.TabIndex = 1;
             this.cmbValutaAnaliza.SelectedIndexChanged += new System.EventHandler(this.cmbValutaAnaliza_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(407, 21);
+            this.label1.Location = new System.Drawing.Point(323, 392);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Valuta:";
             // 
             // cmbKategorije
             // 
             this.cmbKategorije.FormattingEnabled = true;
-            this.cmbKategorije.Location = new System.Drawing.Point(12, 357);
+            this.cmbKategorije.Location = new System.Drawing.Point(14, 496);
+            this.cmbKategorije.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbKategorije.Name = "cmbKategorije";
-            this.cmbKategorije.Size = new System.Drawing.Size(121, 23);
+            this.cmbKategorije.Size = new System.Drawing.Size(138, 28);
             this.cmbKategorije.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 289);
+            this.label2.Location = new System.Drawing.Point(14, 392);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Kategorije:";
             // 
             // rbtnKatPrihodi
             // 
             this.rbtnKatPrihodi.AutoSize = true;
-            this.rbtnKatPrihodi.Location = new System.Drawing.Point(12, 307);
+            this.rbtnKatPrihodi.Location = new System.Drawing.Point(14, 416);
+            this.rbtnKatPrihodi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbtnKatPrihodi.Name = "rbtnKatPrihodi";
-            this.rbtnKatPrihodi.Size = new System.Drawing.Size(63, 19);
+            this.rbtnKatPrihodi.Size = new System.Drawing.Size(77, 24);
             this.rbtnKatPrihodi.TabIndex = 5;
             this.rbtnKatPrihodi.TabStop = true;
             this.rbtnKatPrihodi.Text = "Prihodi";
@@ -104,9 +109,10 @@ namespace BudzetApp
             // rbtnKatRashodi
             // 
             this.rbtnKatRashodi.AutoSize = true;
-            this.rbtnKatRashodi.Location = new System.Drawing.Point(12, 332);
+            this.rbtnKatRashodi.Location = new System.Drawing.Point(14, 448);
+            this.rbtnKatRashodi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rbtnKatRashodi.Name = "rbtnKatRashodi";
-            this.rbtnKatRashodi.Size = new System.Drawing.Size(67, 19);
+            this.rbtnKatRashodi.Size = new System.Drawing.Size(83, 24);
             this.rbtnKatRashodi.TabIndex = 6;
             this.rbtnKatRashodi.TabStop = true;
             this.rbtnKatRashodi.Text = "Rashodi";
@@ -114,9 +120,10 @@ namespace BudzetApp
             // 
             // btnIzbrisiKat
             // 
-            this.btnIzbrisiKat.Location = new System.Drawing.Point(12, 397);
+            this.btnIzbrisiKat.Location = new System.Drawing.Point(12, 532);
+            this.btnIzbrisiKat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIzbrisiKat.Name = "btnIzbrisiKat";
-            this.btnIzbrisiKat.Size = new System.Drawing.Size(75, 41);
+            this.btnIzbrisiKat.Size = new System.Drawing.Size(138, 55);
             this.btnIzbrisiKat.TabIndex = 7;
             this.btnIzbrisiKat.Text = "Izbriši kategoriju";
             this.btnIzbrisiKat.UseVisualStyleBackColor = true;
@@ -124,9 +131,10 @@ namespace BudzetApp
             // 
             // btnDodajKat
             // 
-            this.btnDodajKat.Location = new System.Drawing.Point(160, 397);
+            this.btnDodajKat.Location = new System.Drawing.Point(183, 532);
+            this.btnDodajKat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDodajKat.Name = "btnDodajKat";
-            this.btnDodajKat.Size = new System.Drawing.Size(75, 41);
+            this.btnDodajKat.Size = new System.Drawing.Size(138, 55);
             this.btnDodajKat.TabIndex = 8;
             this.btnDodajKat.Text = "Dodaj kategoriju";
             this.btnDodajKat.UseVisualStyleBackColor = true;
@@ -134,16 +142,17 @@ namespace BudzetApp
             // 
             // txtDodajKat
             // 
-            this.txtDodajKat.Location = new System.Drawing.Point(160, 357);
+            this.txtDodajKat.Location = new System.Drawing.Point(183, 497);
+            this.txtDodajKat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDodajKat.Name = "txtDodajKat";
-            this.txtDodajKat.Size = new System.Drawing.Size(100, 23);
+            this.txtDodajKat.Size = new System.Drawing.Size(138, 27);
             this.txtDodajKat.TabIndex = 9;
             // 
             // formAnaliza
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 450);
+            this.ClientSize = new System.Drawing.Size(436, 600);
             this.Controls.Add(this.txtDodajKat);
             this.Controls.Add(this.btnDodajKat);
             this.Controls.Add(this.btnIzbrisiKat);
@@ -154,8 +163,9 @@ namespace BudzetApp
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbValutaAnaliza);
             this.Controls.Add(this.rtbAnaliza);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formAnaliza";
-            this.Text = "formAnaliza";
+            this.Text = "Analiza";
             this.Load += new System.EventHandler(this.formAnaliza_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

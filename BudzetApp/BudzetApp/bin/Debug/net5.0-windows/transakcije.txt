@@ -1,2 +1,11 @@
 Prihod;poso;100;HRK;posao
-Rashod;zett;12;HRK;prijevoz
+Rashod;zett;12;HRK;prijevozPrihod;nesto;89;HRK;posao
+Prihod;asd;400;HRK;posao
+Prihod;asd;80;HRK;posao
+Prihod;posa;466;HRK;posao
+Prihod;posa;466;HRK;posao
+Prihod;nesto;688;HRK;posao
+Rashod;hrana;60;HRK;zabava
+Prihod;asdasdasdasf;366;HRK;novo
+Prihod;plaća;8000;HRK;posao
+Rashod;kino;200;HRK;zabava
