@@ -81,7 +81,7 @@ namespace BudzetApp
             this.cmbKategorije.Location = new System.Drawing.Point(14, 496);
             this.cmbKategorije.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbKategorije.Name = "cmbKategorije";
-            this.cmbKategorije.Size = new System.Drawing.Size(138, 28);
+            this.cmbKategorije.Size = new System.Drawing.Size(136, 28);
             this.cmbKategorije.TabIndex = 3;
             // 
             // label2

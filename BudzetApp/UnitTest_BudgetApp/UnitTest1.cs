@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using BudzetApp;
 
 namespace UnitTest_BudgetApp
 {
@@ -6,8 +7,14 @@ namespace UnitTest_BudgetApp
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestKonverzija()
         {
+            int iznos = 500;
+
+            double koefKonv = Form1.konverzije["HRK" + "GBP"];
+            double ocekivani = 55.4;
+
+            Assert.AreEqual(ocekivani, iznos * koefKonv,0.2);
         }
     }
 }

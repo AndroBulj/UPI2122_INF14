@@ -1,3 +1,4 @@
 prijevoz;12
 zabava;260
 higijena;0
+kino;0

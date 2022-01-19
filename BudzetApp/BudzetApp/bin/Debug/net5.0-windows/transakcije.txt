@@ -9,3 +9,4 @@ Rashod;hrana;60;HRK;zabava
 Prihod;asdasdasdasf;366;HRK;novo
 Prihod;plaća;8000;HRK;posao
 Rashod;kino;200;HRK;zabava
+Prihod;asd;67;HRK;novo

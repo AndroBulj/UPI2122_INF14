@@ -139,7 +139,7 @@ namespace BudzetApp
 
         }
 
-        private void btnDodajKat_Click(object sender, EventArgs e)
+        public void btnDodajKat_Click(object sender, EventArgs e)
         {
             if (txtDodajKat.Text == "")
             {
@@ -177,7 +177,7 @@ namespace BudzetApp
             }
 
             rbtnKatPrihodi.Checked = false;
-            rbtnKatPrihodi.Checked = true;
+            rbtnKatRashodi.Checked = false;
             cmbKategorije.Text = "";
             txtDodajKat.Text = "";
             IspisAnalize();
