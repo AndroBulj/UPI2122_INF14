@@ -1,1 +1,2 @@
-
+Prihod;ppp;7000;HRK;posao
+Rashod;riba;100;HRK;hrana

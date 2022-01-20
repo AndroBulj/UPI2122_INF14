@@ -5736,19 +5736,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andro\\.nuget\\packages\\": {}
+    "C:\\Users\\Karlo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\UnitTest_BudgetApp\\UnitTest_BudgetApp.csproj",
+      "projectUniqueName": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\UnitTest_BudgetApp\\UnitTest_BudgetApp.csproj",
       "projectName": "UnitTest_BudgetApp",
-      "projectPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\UnitTest_BudgetApp\\UnitTest_BudgetApp.csproj",
-      "packagesPath": "C:\\Users\\Andro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\UnitTest_BudgetApp\\obj\\",
+      "projectPath": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\UnitTest_BudgetApp\\UnitTest_BudgetApp.csproj",
+      "packagesPath": "C:\\Users\\Karlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\UnitTest_BudgetApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Andro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Karlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5762,8 +5762,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows7.0",
           "projectReferences": {
-            "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {
-              "projectPath": "C:\\Users\\Andro\\Desktop\\UPI\\UPI_Projekt\\BudzetApp\\BudzetApp\\BudzetApp.csproj"
+            "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\BudzetApp\\BudzetApp.csproj": {
+              "projectPath": "C:\\Users\\Karlo\\Source\\Repos\\UPI2122_INF14\\BudzetApp\\BudzetApp\\BudzetApp.csproj"
             }
           }
         }
@@ -5810,7 +5810,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

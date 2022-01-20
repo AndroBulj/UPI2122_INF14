@@ -1,0 +1,3 @@
+hrana;100
+smještaj;0
+prijevoz;0

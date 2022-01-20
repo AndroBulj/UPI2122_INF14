@@ -1,0 +1,2 @@
+posao;7000
+poklon;0
